@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           <ul className="w-max flex justify-center items-center gap-5 text-white text-md capitalize">
             <li><Link href={"/"}>home</Link></li>
             <li><Link href={"/services"}>services</Link></li>
-            <li><Link href={"/blog"}>blog</Link></li>
+            <li><Link href={"/prd_detail"}>product</Link></li>
           </ul>
         </nav>
         <main>{children}</main>
