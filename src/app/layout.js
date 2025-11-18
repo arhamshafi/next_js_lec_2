@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
         <nav className="w-full h-[60px] bg-green-800 flex justify-between items-center px-5 select-none fixed top-0 left-0 ">
           <div className="text-white font-bold text-2xl tracking-[2px]" >LOGO</div>
           <ul className="w-max flex justify-center items-center gap-5 text-white text-md capitalize">
-            <li><Link href={"/"}>home</Link></li>
-            <li><Link href={"/services"}>services</Link></li>
-            <li><Link href={"/prd_detail"}>product</Link></li>
+            <li className={` ${pathname == "/" && "text-yellow-400"} `}><Link href={"/"}>home</Link></li>
+            <li className={` ${pathname == "/services" && "text-yellow-400"} `}><Link href={"/services"}>services</Link></li>
+            <li className={` ${pathname == "/prd_detail" && "text-yellow-400"} `}><Link href={"/prd_detail"}>product</Link></li>
           </ul>
         </nav>
         <main>{children}</main>
