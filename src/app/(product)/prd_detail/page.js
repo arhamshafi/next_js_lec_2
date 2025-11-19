@@ -1,4 +1,5 @@
-import React from "react";
+export const dynamic = "force-dynamic"
+
 import Client_component from "./Client_component";
 
 async function Page() {
